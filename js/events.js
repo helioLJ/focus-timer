@@ -46,12 +46,12 @@ export default function ({
   buttonSoundOn.addEventListener('click', function () {
     buttonSoundOn.classList.add('hide')
     buttonSoundOff.classList.remove('hide')
-    sound.bgAudio.play()
+    sound.bgAudio.pause()
   })
 
   buttonSoundOff.addEventListener('click', function () {
     buttonSoundOn.classList.remove('hide')
     buttonSoundOff.classList.add('hide')
-    sound.bgAudio.pause()
+    sound.bgAudio.play()
   })
 }
